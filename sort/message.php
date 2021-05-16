@@ -367,7 +367,7 @@
 			require_once('../private_questions/5_question_finish.php');
 			break;
 		default:
-			require_once('../questions/2_minimum_amount_rent.php');
+			require_once('../talk/message.php');
 			break;
 	}
 ?>
