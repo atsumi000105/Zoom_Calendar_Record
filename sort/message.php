@@ -83,11 +83,9 @@
 			break;
 		case '第一希望は1R 1Kです':
 			require_once('../questions/4_floor_plan_2.php');
-			require_once('questions/4_floor_plan_2.php');
 			break;
 		case '第一希望は1DK 1LDKです':
 			require_once('../questions/4_floor_plan_2.php');
-			require_once('questions/4_floor_plan_2.php');
 			break;
 		case '第一希望は2K 2DK 2LDKです':
 			require_once('../questions/4_floor_plan_2.php');
@@ -322,7 +320,6 @@
 			break;
 		case '公務員':
 			require_once('../private_questions/3_reason_move_in.php');
-			require_once('private_questions/3_reason_move_in.php');
 			break;
 		case '個人事業主':
 			require_once('../private_questions/3_reason_move_in.php');
@@ -370,7 +367,7 @@
 			require_once('../private_questions/5_question_finish.php');
 			break;
 		default:
-			require('questions/city_name_1.php');
+			require_once('../questions/2_minimum_amount_rent.php');
 			break;
 	}
 ?>
