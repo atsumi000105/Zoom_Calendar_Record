@@ -20,7 +20,8 @@ foreach ($client->parseEvents() as $event) {
 					$client->replyMessage($reply);
 					break;
 				case 'location':
-					$reply['messages'][] = ['type' => 'text', 'text' => $messge['text']];
+					$reply['replyToken'] = $event['replyToken'];
+					$reply['messages'][] = ['type' => 'text', 'text' => $message['text']];
 					require_once('../questions/11_finish.php');
 					$client->replyMessage($reply);
 					break;

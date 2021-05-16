@@ -22,6 +22,7 @@ if (!$id) {
 	$insert->execute([$line_user['id'], $created_at]);
 
 	require_once('../google_calendar/line_bot_register.php');
+	require_once('../slack/line_bot_register.php');
 
 } else {
 	$updated_at = date('Y-m-d H:i:s');
