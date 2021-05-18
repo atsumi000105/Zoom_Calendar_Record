@@ -1,7 +1,7 @@
 <?php
-$dsn = 'mysql:host=localhost; dbname=chinen';
-$username = 'xxxxx';
-$password = 'xxxxx';
+$dsn = 'mysql:host=localhost; dbname=xxxxxx';
+$username = 'xxxxxxx';
+$password = 'xxxxxxx';
 try {
 		$dbh = new PDO ($dsn, $username, $password);
 } catch (PDOException $e) {
@@ -14,7 +14,7 @@ $select->execute();
 $line_user = $select->fetch();
 
 $headers = [
-	"Authorization: Bearer xxxxxxxxxxxxxxxxxxxxxxxx", //（1)
+	"Authorization: Bearer xxxxxxxxxxxxxxxxx", //（1)
 	'Content-Type: application/json;charset=utf-8'
 ];
 

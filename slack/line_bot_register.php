@@ -10,7 +10,7 @@ $url = "https://slack.com/api/chat.postMessage"; //(2)
 //(3)
 $post_fields = [
 	"channel" => "ライン新規登録",
-	"text" => "ラインボットにお客さんが登録しました。\n対応をお願いします！\n",
+	"text" => "ラインボットにお客様が登録しました。\n対応をお願いします！\n",
 	"as_user" => true
 ];
 
