@@ -1,6 +1,6 @@
 # 賃貸ヒアリングボットくん
 
-[QRコード](../../image/images/IMG_2695.JPG)<br>
+[賃貸ヒアリングボットくん](https://user-images.githubusercontent.com/67732612/118601028-19a44a80-b7f5-11eb-9558-608b818b59f0.JPG)<br>
 [友達追加はこちら](https://line.me/R/ti/p/%40155jsgma)
 
 # コンセプト
@@ -28,7 +28,8 @@
   * 毎日24時にその日のラインボット登録人数をslackに通知
 
 # デモ動画
-[Animated GIF-downsized](https://user-images.githubusercontent.com/67732612/118599452-dfd24480-b7f2-11eb-99d1-a950b9b0343d.gif)
+[賃貸に関する質問](https://user-images.githubusercontent.com/67732612/118600848-e5308e80-b7f4-11eb-9662-1f8cbeba3ef6.gif)
+[個人情報に関する質問](https://user-images.githubusercontent.com/67732612/118602043-7d2e7800-b7f5-11eb-9c39-998509001f44.gif)
 
 # 開発環境
 
