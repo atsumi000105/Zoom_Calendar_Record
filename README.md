@@ -1,6 +1,7 @@
 # 賃貸ヒアリングボットくん
 
 ![賃貸ヒアリングボットくん](https://user-images.githubusercontent.com/67732612/118601028-19a44a80-b7f5-11eb-9558-608b818b59f0.JPG)<br>
+
 [友達追加はこちら](https://line.me/R/ti/p/%40155jsgma)
 
 # コンセプト
@@ -35,13 +36,14 @@
     - 毎日24時にその日のラインボット登録人数をslackに通知
 
 # デモ動画
-| 賃貸に関する質問 | 個人情報に関する質問 |
-|----------------- | -------------------- |
-| ![賃貸に関する質問](https://user-images.githubusercontent.com/67732612/118636778-677e7a00-b818-11eb-9b2d-3cf0f1c95ae5.gif) | ![個人情報に関する質問](https://user-images.githubusercontent.com/67732612/118637494-394d6a00-b819-11eb-9348-3239190afd32.gif) |
+| 賃貸に関する質問 | 個人情報に関する質問 | トーク機能 |
+|----------------- | -------------------- | ---------- |
+| ![賃貸に関する質問](https://user-images.githubusercontent.com/67732612/118636778-677e7a00-b818-11eb-9b2d-3cf0f1c95ae5.gif) | ![個人情報に関する質問](https://user-images.githubusercontent.com/67732612/118637494-394d6a00-b819-11eb-9348-3239190afd32.gif) | ![トーク機能](https://user-images.githubusercontent.com/67732612/118766148-63596780-b8bf-11eb-86dd-aa23dddb9ceb.gif) |
 
 # 開発環境
 
-* サーバー：Linux(CentOS)
+* サーバー：Linux(CentOS)7.6.1810
+* ウェブサーバー：Apache/2.4.6
 * データベース：MySQL 5.6.44
 * エディター：Vim
 * 言語：PHP 7.1.29
