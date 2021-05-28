@@ -40,7 +40,7 @@
 # デモ動画
 | 賃貸に関する質問 | 個人情報に関する質問 |zoom機能 | トーク機能 |
 |----------------- | -------------------- | ------- | ---------- |
-| ![賃貸に関する質問](https://user-images.githubusercontent.com/67732612/119958069-0445d200-bfe6-11eb-858d-4e69d02de760.gif) | ![個人情報に関する質問](https://user-images.githubusercontent.com/67732612/119958108-0f006700-bfe6-11eb-85b0-0d777453a0b6.gif) | ![zoom面談を予約](https://user-images.githubusercontent.com/67732612/119958145-1889cf00-bfe6-11eb-8ae2-3a6c5ba93052.gif) | ![トーク機能](https://user-images.githubusercontent.com/67732612/119958235-322b1680-bfe6-11eb-974f-4dfcf33fbf6c.gif) |
+| ![賃貸に関する質問](https://user-images.githubusercontent.com/67732612/119961367-50464600-bfe9-11eb-98fa-b795b0474177.gif) | ![個人情報に関する質問](https://user-images.githubusercontent.com/67732612/119958108-0f006700-bfe6-11eb-85b0-0d777453a0b6.gif) | ![zoom面談を予約](https://user-images.githubusercontent.com/67732612/119958145-1889cf00-bfe6-11eb-8ae2-3a6c5ba93052.gif) | ![トーク機能](https://user-images.githubusercontent.com/67732612/119958235-322b1680-bfe6-11eb-974f-4dfcf33fbf6c.gif) |
 
 # 表示画面
 
