@@ -1,5 +1,7 @@
 # 賃貸ヒアリングボットくん
 
+![賃貸ヒアリング](https://user-images.githubusercontent.com/67732612/119969276-b20aae00-bff1-11eb-8979-4277d23d2283.JPG)
+
 [友達追加はこちら](https://line.me/R/ti/p/%40155jsgma)
 
 # コンセプト
