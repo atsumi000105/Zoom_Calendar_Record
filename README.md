@@ -24,22 +24,30 @@
 
 1. トーク機能
 
-    - talk apiを使い文字列を入力すると会話することができます
+    - **talk API**を使い文字列を入力すると会話することができます
 
 1. 通知機能
 
-    - ラインボットに登録時、slackに通知。グーグルカレンダーにも登録
+    - ラインボットに登録した後、slackに通知
     - 賃貸に関する質問の回答を全て終わるとslackに通知
     - 個人情報に関する質問の回答を全て終えるとslackに通知
+    - 面談を予約した後、グーグルカレンダーに登録し、slackに通知
 
 1. バッチ処理機能
 
     - 毎日24時にその日のラインボット登録人数をslackに通知
 
 # デモ動画
-| 賃貸に関する質問 | 個人情報に関する質問 | トーク機能 |
-|----------------- | -------------------- | ---------- |
-| ![賃貸に関する質問](https://user-images.githubusercontent.com/67732612/118636778-677e7a00-b818-11eb-9b2d-3cf0f1c95ae5.gif) | ![個人情報に関する質問](https://user-images.githubusercontent.com/67732612/118637494-394d6a00-b819-11eb-9348-3239190afd32.gif) | ![トーク機能](https://user-images.githubusercontent.com/67732612/118766148-63596780-b8bf-11eb-86dd-aa23dddb9ceb.gif) |
+| 賃貸に関する質問 | 個人情報に関する質問 |zoom機能 | トーク機能 |
+|----------------- | -------------------- | ------- | ---------- |
+| ![賃貸に関する質問](https://user-images.githubusercontent.com/67732612/119958069-0445d200-bfe6-11eb-858d-4e69d02de760.gif) | ![個人情報に関する質問](https://user-images.githubusercontent.com/67732612/119958108-0f006700-bfe6-11eb-85b0-0d777453a0b6.gif) | ![zoom面談を予約](https://user-images.githubusercontent.com/67732612/119958145-1889cf00-bfe6-11eb-8ae2-3a6c5ba93052.gif) | ![トーク機能](https://user-images.githubusercontent.com/67732612/119958235-322b1680-bfe6-11eb-974f-4dfcf33fbf6c.gif) |
+
+# 表示画面
+
+* **グーグルマップAPI**を使いお客様の住みたい地域を表示
+
+![表示画面](https://user-images.githubusercontent.com/67732612/119958200-263f5480-bfe6-11eb-88e6-a217bf565c3a.png)
+
 
 # 開発環境
 
@@ -47,7 +55,7 @@
 * ウェブサーバー：Apache/2.4.6
 * データベース：MySQL/5.6.44
 * エディター：Vim
-* 言語：PHP/7.1.29
+* 言語：PHP/7.1.29, Laravel5.5
 
 # Author
 
