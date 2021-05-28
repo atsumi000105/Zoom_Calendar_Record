@@ -1,15 +1,16 @@
 <?php
 require_once('../secret/password.php');
 $headers = [
-	"Authorization: Bearer $slack_line_bot_register",
+	"Authorization: Bearer $slack_zoom_chnanel_api_key", //（1)
 	'Content-Type: application/json;charset=utf-8'
 ];
 
-$url = "https://slack.com/api/chat.postMessage";
+$url = "https://slack.com/api/chat.postMessage"; //(2)
 
+//(3)
 $post_fields = [
-	"channel" => "ライン新規登録",
-	"text" => "ラインボットにお客様が登録しました。\n対応をお願いします！\n",
+	"channel" => "面談",
+	"text" => "面談が追加されました。\n確認をお願いします！\n",
 	"as_user" => true
 ];
 

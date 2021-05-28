@@ -1,7 +1,7 @@
 <?php
-$dsn = 'mysql:host=localhost; dbname=chinen';
-$username = 'xxxxx';
-$password = 'xxxxx';
+$dsn = 'mysql:host=localhost; dbname=xxxxxx';
+$username = 'xxxxxxxx';
+$password = 'xxxxxxxx';
 try {
 		$dbh = new PDO ($dsn, $username, $password);
 } catch (PDOException $e) {
@@ -14,11 +14,11 @@ $select->execute();
 $line_user = $select->fetch();
 
 $headers = [
-	"Authorization: Bearer xxxxxxxxxxxxxxxxxxxxxxxx", //（1)
+	"Authorization: Bearer xxxxxxxxxxxxxxxxx",
 	'Content-Type: application/json;charset=utf-8'
 ];
 
-$url = "https://slack.com/api/chat.postMessage"; //(2)
+$url = "https://slack.com/api/chat.postMessage";
 
 //(3)
 $post_fields = [

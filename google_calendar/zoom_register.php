@@ -1,8 +1,7 @@
 <?php
-require_once('../secret/password.php');
-require_once('../common/db_connect.php');
-	$start_time = new DateTime(date("Y/m/d H:i:s"));
-	$end_time = new DateTime(date('Y/m/d H:i:s', strtotime("now +140 seconds")));
+function insertDate($calendar_id, $meeting_time) {
+	$start_time = new DateTime($meeting_time);
+	$end_time = new DateTime(date('Y/m/d H:i:s', strtotime($meeting_time . "+140 seconds")));
 
 	// composerでインストールしたライブラリを読み込む
 	require_once __DIR__.'/vendor/autoload.php';
@@ -28,7 +27,7 @@ require_once('../common/db_connect.php');
 	$service = new Google_Service_Calendar($client);
 
 	$event = new Google_Service_Calendar_Event(array(
-		'summary' => 'ラインボットに登録', //予定のタイトル
+		'summary' => 'zoom面談', //予定のタイトル
 		'start' => array(
         	'dateTime' => $start_time->format(DateTime::ATOM),// 開始日時
 			'timeZone' => 'Asia/Tokyo',
@@ -39,13 +38,24 @@ require_once('../common/db_connect.php');
 		),
 	));
 	$event = $service->events->insert($calendar_id, $event);
-	$created_at = date('Y-m-d H:i:s');
-	$sql = 'select `id`, `line_id` from `line_users` where `line_id` = ?';
-	$select = $dbh->prepare($sql);
-	$select->execute(['U386043e895705720c9d6d898443e882e']);
-	$line_user = $select->fetch();
-	$sql = 'UPDATE meetings SET event_id = ? WHERE line_id = ?';
-	$stmt = $dbh->prepare($sql);
-	$insert = $stmt->execute(array($event['id'], $line_user['id']));
-	var_dump($event['id']);
+	return $event;
+}
+require_once('../secret/password.php');
+$original_date = $event['postback']['params']['datetime'];
+$timestamp = strtotime($original_date);
+$meeting_time = date("Y-m-d H:i:s", $timestamp );
+$line_id = $event['source']['userId'];
+
+$event = insertDate($calendar_id, $meeting_time);
+require_once('../common/db_connect.php');
+$created_at = date('Y-m-d H:i:s');
+$sql = 'select `id`, `line_id` from `line_users` where `line_id` = ?';
+$select = $dbh->prepare($sql);
+$select->execute([$line_id]);
+$line_user = $select->fetch();
+
+$sql = 'UPDATE meetings SET event_id = ?, zoom_url = ?, meeting_time = ? WHERE line_id = ?';
+$stmt = $dbh->prepare($sql);
+$insert = $stmt->execute(array($event['id'], $json_result['join_url'], $meeting_time, $line_user['id']));
+
 ?>

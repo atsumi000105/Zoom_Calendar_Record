@@ -17,117 +17,110 @@ $content = [
 	],
 	[
 		'type' => 'button', 'action' => [
-			'type' => 'message', 'label' => '特に希望はない', 'text' => '第二希望、必要な条件などの希望は特にない'
-		],
-		'height' => 'sm'
-	],
-	[
-		'type' => 'button', 'action' => [
 			'type' => 'message', 'label' => 'バス・トイレ別', 'text' => '第二希望はバス・トイレ別です'
 		],
-		'height' => 'sm',
-		'offsetBottom' => '10px'
+		'height' => 'sm'
 	],
 	[
 		'type' => 'button', 'action' => [
 			'type' => 'message', 'label' => '2階以上', 'text' => '第二希望は2階以上です'
 		],
 		'height' => 'sm',
-		'offsetBottom' => '20px'
+		'offsetBottom' => '10px'
 	],
 	[
 		'type' => 'button', 'action' => [
 			'type' => 'message', 'label' => '駐車場付き', 'text' => '第二希望は駐車場付きです'
 		],
 		'height' => 'sm',
-		'offsetBottom' => '30px'
+		'offsetBottom' => '20px'
 	],
 	[
 		'type' => 'button', 'action' => [
 			'type' => 'message', 'label' => 'ペット可', 'text' => '第二希望はペット可です'
 		],
 		'height' => 'sm',
-		'offsetBottom' => '40px'
+		'offsetBottom' => '30px'
 	],
 	[
 		'type' => 'button', 'action' => [
 			'type' => 'message', 'label' => 'オートロック', 'text' => '第二希望はオートロックです'
 		],
 		'height' => 'sm',
-		'offsetBottom' => '50px'
+		'offsetBottom' => '40px'
 	],
 	[
 		'type' => 'button', 'action' => [
 			'type' => 'message', 'label' => 'フローリング', 'text' => '第二希望はフローリングです'
 		],
 		'height' => 'sm',
-		'offsetBottom' => '60px'
+		'offsetBottom' => '50px'
 	],
 	[
 		'type' => 'button', 'action' => [
 			'type' => 'message', 'label' => 'コンロ2口以上', 'text' => '第二希望はコンロ2口以上です'
 		],
 		'height' => 'sm',
-		'offsetBottom' => '70px'
+		'offsetBottom' => '60px'
 	],
 	[
 		'type' => 'button', 'action' => [
 			'type' => 'message', 'label' => '独立洗面所', 'text' => '第二希望は独立洗面所です'
 		],
 		'height' => 'sm',
-		'offsetBottom' => '80px'
+		'offsetBottom' => '70px'
 	],
 	[
 		'type' => 'button', 'action' => [
 			'type' => 'message', 'label' => '追い焚き機能', 'text' => '第二希望は追い焚き機能です'
 		],
 		'height' => 'sm',
-		'offsetBottom' => '90px'
+		'offsetBottom' => '80px'
 	],
 	[
 		'type' => 'button', 'action' => [
 			'type' => 'message', 'label' => '浴室乾燥機', 'text' => '第二希望は浴室乾燥機です'
 		],
 		'height' => 'sm',
-		'offsetBottom' => '100px'
+		'offsetBottom' => '90px'
 	],
 	[
 		'type' => 'button', 'action' => [
 			'type' => 'message', 'label' => '温水洗浄便座', 'text' => '第二希望は温水洗浄便座です'
 		],
 		'height' => 'sm',
-		'offsetBottom' => '110px'
+		'offsetBottom' => '100px'
 	],
 	[
 		'type' => 'button', 'action' => [
 			'type' => 'message', 'label' => 'モニター付きインターホン', 'text' => '第二希望はモニター付きインターホンです'
 		],
 		'height' => 'sm',
-		'offsetBottom' => '120px'
+		'offsetBottom' => '110px'
 	],
 	[
 		'type' => 'button', 'action' => [
 			'type' => 'message', 'label' => '宅配ボックス', 'text' => '第二希望は宅配ボックスです'
 		],
 		'height' => 'sm',
-		'offsetBottom' => '130px'
+		'offsetBottom' => '120px'
 	],
 	[
 		'type' => 'button', 'action' => [
 			'type' => 'message', 'label' => 'バイク置き場', 'text' => '第二希望はバイク置き場です'
 		],
 		'height' => 'sm',
-		'offsetBottom' => '140px'
+		'offsetBottom' => '130px'
 	],
 	[
 		'type' => 'button', 'action' => [
 			'type' => 'message', 'label' => 'エレベーター', 'text' => '第二希望はエレベーターです'
 		],
 		'height' => 'sm',
-		'offsetBottom' => '150px'
+		'offsetBottom' => '140px'
 	],
 ];
-$body = ['type' => 'box', 'layout' => 'vertical', 'height' => '540px', 'contents' => $content];
+$body = ['type' => 'box', 'layout' => 'vertical', 'height' => '510px', 'contents' => $content];
 $contents = ['type' => 'bubble', 'body' => $body];
 $reply['messages'][0] = ['type' => 'flex', 'altText' => 'This is a Flex Message', 'contents' => $contents];
 ?>

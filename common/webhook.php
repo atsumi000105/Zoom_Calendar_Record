@@ -10,6 +10,11 @@ foreach ($client->parseEvents() as $event) {
 		case 'unfollow':
 			require_once('../follow_and_unfollow/unfollow.php');
 			break;
+		case 'postback':
+			$reply['replyToken'] = $event['replyToken'];
+			require_once('../sort/meeting.php');
+			$client->replyMessage($reply);
+			break;
 		case 'message':
 			$message = $event['message'];
 			switch ($message['type']) {
