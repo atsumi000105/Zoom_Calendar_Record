@@ -1,6 +1,6 @@
 # 賃貸ヒアリングボットくん
 
-![賃貸ヒアリングボットくん](https://user-images.githubusercontent.com/67732612/118921673-e809bb80-b97b-11eb-9c07-f3be5ca147e7.JPG)
+![賃貸ヒアリングボットくん](https://user-images.githubusercontent.com/67732612/119965828-0ad84780-bfee-11eb-96b9-cda65fa608c7.PNG)
 
 
 [友達追加はこちら](https://line.me/R/ti/p/%40155jsgma)
